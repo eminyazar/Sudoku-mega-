@@ -2,110 +2,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
-    <script src="lib/script.js"></script>
+    
   </head>
 
   <body>
     <h2>-SUDOKU-</h2>
-    <table>
-    <tr class="sudoku">
-      <td class="cell2">6</td>
-      <td class="cell2">2</td>
-      <td class="cell2">4</td>
-      <td class="cell1">3</td>
-      <td class="cell1">5</td>
-      <td class="cell1">7</td>
-      <td class="cell2">1</td>
-      <td class="cell2">8</td>
-      <td class="cell2">9</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell2">9</td>
-      <td class="cell2">7</td>
-      <td class="cell2">1</td>
-      <td class="cell1">6</td>
-      <td class="cell1">2</td>
-      <td class="cell1">8</td>
-      <td class="cell2">3</td>
-      <td class="cell2">5</td>
-      <td class="cell2">4</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell2">8</td>
-      <td class="cell2">3</td>
-      <td class="cell2">5</td>
-      <td class="cell1">4</td>
-      <td class="cell1">9</td>
-      <td class="cell1">1</td>
-      <td class="cell2">7</td>
-      <td class="cell2">2</td>
-      <td class="cell2">6</td>
-    <tr class="sudoku">
-      <td class="cell1">5</td>
-      <td class="cell1">6</td>
-      <td class="cell1">3</td>
-      <td class="cell2">8</td>
-      <td class="cell2">7</td>
-      <td class="cell2">2</td>
-      <td class="cell1">9</td>
-      <td class="cell1">4</td>
-      <td class="cell1">1</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell1">2</td>
-      <td class="cell1">8</td>
-      <td class="cell1">9</td>
-      <td class="cell2">1</td>
-      <td class="cell2">3</td>
-      <td class="cell2">4</td>
-      <td class="cell1">6</td>
-      <td class="cell1">7</td>
-      <td class="cell1">5</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell1">4</td>
-      <td class="cell1">1</td>
-      <td class="cell1">7</td>
-      <td class="cell2">5</td>
-      <td class="cell2">6</td>
-      <td class="cell2">9</td>
-      <td class="cell1">2</td>
-      <td class="cell1">3</td>
-      <td class="cell1">8</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell2">3</td>
-      <td class="cell2">4</td>
-      <td class="cell2">6</td>
-      <td class="cell1">2</td>
-      <td class="cell1">1</td>
-      <td class="cell1">5</td>
-      <td class="cell2">8</td>
-      <td class="cell2">9</td>
-      <td class="cell2">7</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell2">7</td>
-      <td class="cell2">5</td>
-      <td class="cell2">2</td>
-      <td class="cell1">9</td>
-      <td class="cell1">8</td>
-      <td class="cell1">6</td>
-      <td class="cell2">4</td>
-      <td class="cell2">1</td>
-      <td class="cell2">3</td>
-    </tr>
-    <tr class="sudoku">
-      <td class="cell2">1</td>
-      <td class="cell2">9</td>
-      <td class="cell2">8</td>
-      <td class="cell1">7</td>
-      <td class="cell1">4</td>
-      <td class="cell1">3</td>
-      <td class="cell2">5</td>
-      <td class="cell2">6</td>
-      <td class="cell2">2</td>
-    </tr>
-  </table>
+    <select id="level-select">
+      <option value="easy">Kolay</option>
+      <option value="medium">Orta</option>
+      <option value="hard">Zor</option>
+    </select>
+    <button onclick="startGame()">Oyuna Başla</button>
+    <div id="sudoku-container"></div>
+
+
+    
+    
+    
+    <br><hr><br><div><a href="https://www.linkedin.com/in/emin-yazar-127523257/" target="_blank">LinkedIn Profile: Emin Yazar</a></div>
+    
+
+
+
+
+
+
+
+  <script src="script.js"></script>
   </body>
 </html>

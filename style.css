@@ -1,51 +1,67 @@
 body {
-  font-family: 'Tahoma', sans-serif;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
   text-align: center;
-  margin: 20px;
+  margin-top: 50px;
 }
-table {
-  border-collapse: collapse;
-  margin: 20px auto;
+
+h2 {
+  color: #333;
 }
-td {
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgb(17, 1, 1);
+
+#level-select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
   font-size: 16px;
-}
-.bold {
-  font-weight: bold;
-}
-.sudoku {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-}
-.cell1 {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color: #a19b9c;
-  border: 2px solid rgb(119, 53, 53);
-}
-.cell2 {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  font-weight: bold;
-  background-color:  #f8f2f3;
-  border: 2px solid rgb(119, 53, 53);
-}
-h1 {
-  max-width: 485px;
-  margin: 50px auto;
-  padding: 20px;
+  cursor: pointer;
   border-radius: 5px;
+  border: none;
 }
+
+button:hover {
+  background-color: #45a049;
+}
+
+#sudoku-container {
+  margin-top: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+td:nth-child(3n), td:nth-child(6n) {
+  border-right: 3px solid #333;
+}
+
+tr:nth-child(3n) td {
+  border-bottom: 3px solid #333;
+}
+
+td input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+  outline: none;
+}
+
